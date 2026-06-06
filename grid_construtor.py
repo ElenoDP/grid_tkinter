@@ -13,7 +13,6 @@ def aplicar_malha(container, linhas, colunas, pesos_linhas=None, pesos_colunas=N
     pesos_l = (pesos_linhas or [])
     pesos_c = (pesos_colunas or [])
 
-    # O \n agora funciona perfeitamente e separa o texto das linhas de cima
     if pesos_linhas is not None and len(pesos_l) != linhas:
         print(f"\n[AVISO] pesos_linhas diferente de linhas ({len(pesos_l)} != {linhas}). Ajustando automaticamente.")
 
